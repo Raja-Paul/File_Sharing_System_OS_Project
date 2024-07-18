@@ -1,6 +1,4 @@
 // server functions and class definitions
-// all works contributed arre annotated with an '@' before the functions
-// in case of no annotation, it is contributed by original author '@ayushanand18'
 
 #include <chrono>
 #include <vector>
@@ -69,7 +67,7 @@ public:
 };
 
 // function to split a string based on a particular delimeter
-// contributed by @Amit
+
 vector<string> split(string s, string delimiter)
 {
   size_t pos_start = 0, pos_end, delim_len = delimiter.length();
@@ -96,7 +94,7 @@ private:
   // ThreadPool thread_exec;
   unordered_map<string, string> user_ids;
   // function to get content of a file
-  // conteibuted by @Ajay
+
   std::string __getFileContent(string filepath)
   {
     std::ifstream file(filepath);
@@ -156,7 +154,7 @@ public:
   }
 
   // function to signin with user_id, password
-  // contributed by @Amit
+
   bool signInWithUserIDPassword(string user_id, string password)
   {
     if (user_ids.count(user_id) && user_ids[user_id] == password)
@@ -164,7 +162,7 @@ public:
     return false;
   }
   // function to register with name, user_id, password
-  // contributed by @Ajay
+
   bool registerWithUserIDPassword(string name, string user_id, string password)
   {
     if (!__checkUserWithUserID(user_id))
