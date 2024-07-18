@@ -136,7 +136,7 @@ private:
 
     }
     // function to show files to the user with the list of files on the server
-    // contributed by @rudra
+
     void __view_files()
     {
         std::cout <<">>> Showing all files. " << std::endl;
