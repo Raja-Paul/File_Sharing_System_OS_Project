@@ -82,7 +82,7 @@ private:
  "|_|    |_||_| \\___| |____/ |_| |_| \\__,_||_|   |_||_| |_| \\__, | |____/  \\__, ||___/ \\__|\\___||_| |_| |_|" << std::endl << 
  "                                                          |___/          |___/                           " << std::endl;
     }
-    // contributed by @ajay
+   
     std::string __getFileContent(const std::string &filepath, std::size_t &fileSize)
     {
         std::ifstream file(filepath, std::ios::binary);
@@ -104,7 +104,7 @@ private:
 
         return content.str();
     }
-    // contributed by @ajay
+
     void __upload_file(std::string permissions, std::string path)
     {
         // upload a single file to a server
@@ -116,7 +116,7 @@ private:
         // make an API call
         client->call("upload", splitted_path.back(), user_id, permissions, size_of_file, content);
     }
-    // #TODO: @uday
+
     void __download_file(std::string file_id)
     {
         // just download the file and return the data
@@ -180,7 +180,7 @@ public:
         this->user_id = "";
         this->is_signedin = false;
     }
-    // contributed by @ajay
+
     void upload()
     {
         // upload function to be called directly from frontend
@@ -204,7 +204,7 @@ public:
 
         std::cout << "\tFile Uploaded! "<< std::endl;
     }
-    // contributed by @uday
+
     void download()
     {
         // directly called by the user
@@ -265,7 +265,7 @@ public:
             user_id = username;
         is_signedin = result;
     }
-    // #TODO: @bikash
+
     void init()
     {
         // showup the menu, as soon as the object is constructed, this
